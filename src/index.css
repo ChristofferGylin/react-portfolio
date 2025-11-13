@@ -1,1 +1,21 @@
 @import 'tailwindcss';
+
+h1 {
+  @apply text-5xl text-cyan-300 font-bold;
+}
+
+.sub-header {
+  @apply text-3xl text-sky-300;
+}
+
+.modal {
+  @apply rounded-xl border border-slate-400/70 shadow-lg shadow-slate-950/30 bg-slate-900/80 backdrop-blur-md;
+}
+
+.foreground {
+  @apply border-cyan-400/30 bg-slate-700/50 backdrop-blur-md;
+}
+
+.menu-grid-rows {
+  @apply h-full grid grid-rows-[1fr_25px_1fr] gap-0.5;
+}
