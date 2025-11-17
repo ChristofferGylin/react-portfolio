@@ -1,3 +1,4 @@
+import { Suspense } from "react"
 import { Trans, useTranslation } from "react-i18next"
 
 const lngs = {
@@ -31,4 +32,10 @@ function App() {
   )
 }
 
-export default App
+export default function WrappedApp() {
+  return (
+    <Suspense fallback="Loading...">
+      <App />
+    </Suspense>
+  )
+}
