@@ -10,7 +10,12 @@ i18n.use(I18nextBrowserLanguageDetector).use(initReactI18next).init({
     },
     resources: {
         en: {
-            translation: {}
+            translation: {
+                welcome: {
+                    part1: 'Welcome <1>beautiful</1> people.',
+                    part2: 'This is my portfolio',
+                }
+            }
         }
     }
 })
