@@ -16,6 +16,14 @@ i18n.use(I18nextBrowserLanguageDetector).use(initReactI18next).init({
                     part2: 'This is my portfolio',
                 }
             }
+        },
+        sv: {
+            translation: {
+                welcome: {
+                    part1: 'Välkommen <1>vackra</1> människor.',
+                    part2: 'Det här är min portfolio',
+                }
+            }
         }
     }
 })
