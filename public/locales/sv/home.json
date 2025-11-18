@@ -2,6 +2,10 @@
     "intro": {
         "hi": "Hej, jag heter",
         "tagline": "Jag tycker om att bygga hemsidor och appar.",
-        "text": "Jag är en kreativ frontendutvecklare som älskar utmaningar, att bygga hemsidor, appar och användargränssnitt, lösa problem och komma på nya spännande lösningar. Jag har alltid varit intresserad av teknik i allmänhet och datorer i synnerhet, och har sedan 7 års ålder använt en dator i princip varje dag. Det var tydligt redan tidigt att datorer var min grej och att det skulle bli en stor del av min framtid..."
+        "text": "Jag är en kreativ frontendutvecklare som älskar utmaningar, att bygga hemsidor, appar och användargränssnitt, lösa problem och komma på nya spännande lösningar. Jag har alltid varit intresserad av teknik i allmänhet och datorer i synnerhet, och har sedan 7 års ålder använt en dator i princip varje dag. Det var tydligt redan tidigt att datorer var min grej och att det skulle bli en stor del av min framtid...",
+        "button": "Läs mer"
+    },
+    "github": {
+        "heading": "Hur spenderar jag min tid?"
     }
 }

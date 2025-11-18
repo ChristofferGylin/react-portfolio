@@ -2,6 +2,10 @@
     "intro": {
         "hi": "Hi, my name is",
         "tagline": "I like building apps and web pages.",
-        "text": "I am a creative full-stack developer who loves challenges, building websites, apps, and user interfaces, solving problems, and coming up with new exciting solutions. I have always been interested in technology in general and computers in particular, and since the age of seven, I have used a computer almost every day. It was clear early on that computers were my thing and that they would become a major part of my future..."
+        "text": "I am a creative full-stack developer who loves challenges, building websites, apps, and user interfaces, solving problems, and coming up with new exciting solutions. I have always been interested in technology in general and computers in particular, and since the age of seven, I have used a computer almost every day. It was clear early on that computers were my thing and that they would become a major part of my future...",
+        "button": "Learn more"
+    },
+    "github": {
+        "heading": "How do I spend my time?"
     }
 }
