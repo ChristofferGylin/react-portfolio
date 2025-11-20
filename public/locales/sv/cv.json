@@ -1,0 +1,114 @@
+{
+    "tagline": "Fullstackutvecklare",
+    "introduction": {
+        "heading": "Sammanfattning",
+        "paragraphs": [
+            "Jag är en ambitiös och engagerad fullstackutvecklare med huvudfokus på frontendutveckling som drivs av en passion för att utforska nya tekniker och utveckla min kompetens. Jag har fördjupad erfarenhet av moderna verktyg som React, TypeScript och Tailwind CSS, och ett gediget kunnande inom Next.js-miljön. Jag har gjort ett antal projekt, både privata och för klienter och jag har erfarenhet av att använda molntjänster som AWS, Azure, Linode/Akamai och Vercel för deployment.",
+            "Under större delen av min karriär har jag verkat som entreprenör inom IT och musik-/eventbranschen. Denna erfarenhet har inte bara försett mig med förmågan att ta eget ansvar och arbeta självständigt, utan även lärt mig vikten av anpassningsförmåga och samarbete i olika sammanhang.",
+            "Jag har nyligen genomfört  YH-utbildningen \"Frontend för mobil och webb\" vid Chas Academy i Stockholm, där jag lärt mig de senaste teknikerna inom frontendutveckling.",
+            "Min breda erfarenhet sträcker sig över både Mac, Windows och Linux-plattformar. Med ett livslångt intresse för datorer besitter jag omfattande kunskaper inom områden såsom nätverksteknik, bildredigering (framförallt i Adobe Photoshop), musikproduktion, databashantering, programmering, webbutveckling, webbdesign samt felsökning och reparation av system.",
+            "För mer information om mig och exempel på mitt arbete, se min portfolio site på: https://christoffergylin.com eller min GitHub-profil på: https://github.com//ChristofferGylin"
+        ]
+    },
+    "experience": {
+        "heading": "Erfarenhet",
+        "positions": [
+            {
+                "employer": "Reason Studios",
+                "location": "Stockholm",
+                "title": "Full Stack Developer Praktik",
+                "timeframe": "November 2023 - Maj 2024",
+                "description": "Jag genomförde en praktikperiod som fullstackutvecklare hos Reason Studios (https://reasonstudios.com), en ledande tillverkare av musikproduktionsmjukvara. Under denna tid har jag förvärvat en betydande mängd kunskap och kompetens. Min roll innefattade arbete med teknologier som TypeScript, Next.js, Next-Auth, Jest, React Testing Library och Docker. Vi arbetade enligt agila principer och använde verktyg som Jira och Confluence för att hantera den agila processen."
+            },
+            {
+                "employer": "Paus i karriären för kompetensutveckling",
+                "location": "Stockholm",
+                "title": "",
+                "timeframe": "2020 - 2024",
+                "description": "I samband med pandemin avslutades min tidigare DJ karriär, och jag tog tillfället i akt för att utöka min kompetens och ta mig in på en ny bana genom ungefär 3 år av självstudier i webb- och mjukvaruutveckling, samt den tvååriga YH-utbildningen \"Frontend för mobil och webb\" vid Chas Academy."
+            },
+            {
+                "employer": "Frilans",
+                "location": "Stockholm",
+                "title": "DJ",
+                "timeframe": "2015 - 2020",
+                "description": "Under perioden 2015 till 2020 var jag verksam som frilansande DJ med specialisering på bröllop och födelsedagsfester. Jag genomförde framträdanden på många krogar och barer såsom Solidaritet, Grill, Helenes Krog, Kolingsborg, Hotell Reisen, Oxid och Fabriken, samt på otaliga bröllop, födelsedagar och företagsevent."
+            },
+            {
+                "employer": "Giertta Gylin Events",
+                "location": "Stockholm",
+                "title": "VD, Eventansvarig, DJ, Säljare, Affärsutvecklare",
+                "timeframe": "2007 - 2015",
+                "description": "I rollen som VD och eventansvarig på Giertta Gylin Events var jag ansvarig för företagets dagliga drift och ledning samt planering och genomförande av bröllop, fester och andra event. Jag agerade även som DJ samt hade ansvar för drift och marknadsföring för flera nattklubbar."
+            },
+            {
+                "employer": "Databolaget Roland Thorberg AB",
+                "location": "Huddinge",
+                "title": "IT-supporttekniker, praktik",
+                "timeframe": "2002",
+                "description": "Under min gymnasietid genomförde jag praktik som IT-supporttekniker hos Databolaget Roland Thorberg AB. Där ansvarade jag för att bygga, underhålla, uppgradera och testa kunders datorer."
+            },
+            {
+                "employer": "Gylin Design",
+                "location": "Stockholm",
+                "title": "VD, Webbdesigner, IT-supporttekniker, Säljare, Affärsutvecklare",
+                "timeframe": "2001-2013",
+                "description": "Som grundare och VD för Gylin Design, startat under mina tonår, ansvarade jag för alla aspekter av företagets verksamhet inklusive administration, marknadsföring, bokföring och webbdesign. Verksamheten utvecklades med tiden till att erbjuda IT-support för privatpersoner och småföretag."
+            },
+            {
+                "employer": "S-Post",
+                "location": "Stockholm",
+                "title": "Telefonist/telekollare, administratör, databasadministratör",
+                "timeframe": "2001-2004",
+                "description": "På S-Post började jag som telekollare och avancerade till att administrera telefonlistor och databaser för distribution av lokaltidningar och direktreklam."
+            },
+            {
+                "employer": "Sportguiden",
+                "location": "Stockholm",
+                "title": "Eventansvarig, spelrecensent",
+                "timeframe": "2001",
+                "description": "I rollen som eventansvarig och spelrecensent för Sportguiden, bidrog jag med recensioner av TV-spel samt deltog som arrangör och företrädare vid olika sportrelaterade evenemang."
+            },
+            {
+                "employer": "Sekvencia AB",
+                "location": "Stockholm",
+                "title": "IT-supporttekniker, praktik",
+                "timeframe": "2001",
+                "description": "Under min gymnasietid genomförde jag praktik som IT-supporttekniker hos Sekvencia Sveavägen. Mina uppgifter inkluderade att bygga, underhålla, uppgradera och testa kunders datorer."
+            }
+        ] 
+    },
+    "education": {
+        "heading": "Education",
+        "studies": [
+            {
+                "school": "Chas Academy",
+                "location": "Stockholm",
+                "subject": "Frontend för Mobil och Webb",
+                "timeframe": "September 2022 - Juli 2024",
+                "description": "YH-utbildning"
+            },
+            {
+                "school": "NTI Skolan",
+                "location": "Stockholm",
+                "subject": "Programmering 1",
+                "timeframe": "2020",
+                "description": "Gymnasial vuxenutbildning"
+            },
+            {
+                "school": "NTI Skolan",
+                "location": "Stockholm",
+                "subject": "Digitalt skapande 1",
+                "timeframe": "2020",
+                "description": "Gymnasial vuxenutbildning"
+            },
+            {
+                "school": "Sjödalsgymnasiet",
+                "location": "Stockholm",
+                "subject": "El- Elektronik/Data",
+                "timeframe": "1999-2002",
+                "description": "Gymnasieutbildning"
+            }               
+        ]
+    }
+}
