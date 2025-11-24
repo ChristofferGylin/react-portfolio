@@ -33,13 +33,35 @@
             "links": [
                 {
                     "title": "Live länk",
-                    "href": "https://www.ekholmsnasbacken.se/"
+                    "href": "https://www.ekholmsnasbacken.se"
                 }
             ],
             "images": [
                 "/projects/ekholmsnas/ekholmsnas1.png",
                 "/projects/ekholmsnas/ekholmsnas2.png",
                 "/projects/ekholmsnas/ekholmsnas3.png"
+            ]
+        },
+        {
+            "title": "Tiny Grand Prix",
+            "description": "Ett racingspel i top-down retro stil jag byggt med Phaser 3, en spelmotor för JavaScript, komplett med split screen multiplayer (och buggar), dags att utmana kompisarna på en match!",
+            "tech": [
+                "HTML", "CSS", "JavaScript", "Tone.js", "Phaser 3"
+            ],
+            "links": [
+                {
+                    "title": "Live länk",
+                    "href": "https://christoffergylin.com/tinygrandprix"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/tinygrandprix"
+                }
+            ],
+            "images": [
+                "/projects/tinygrandprix/tinygrandprix1.png",
+                "/projects/tinygrandprix/tinygrandprix2.png",
+                "/projects/tinygrandprix/tinygrandprix3.png"
             ]
         }
     ]
