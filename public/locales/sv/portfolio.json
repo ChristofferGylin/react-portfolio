@@ -23,6 +23,24 @@
                 "/projects/plinkplonk/plinkplonk2.png",
                 "/projects/plinkplonk/plinkplonk3.png"
             ]
+        },
+        {
+            "title": "Ekholmsnäsbackens Webbsida",
+            "description": "En Squarespaceimplementation jag gjorde för skidbacken Ekholmsnäsbacken på Lidingö i Stockholm.",
+            "tech": [
+                "Squarespace", "HTML", "CSS"
+            ],
+            "links": [
+                {
+                    "title": "Live länk",
+                    "href": "https://www.ekholmsnasbacken.se/"
+                }
+            ],
+            "images": [
+                "/projects/ekholmsnas/ekholmsnas1.png",
+                "/projects/ekholmsnas/ekholmsnas2.png",
+                "/projects/ekholmsnas/ekholmsnas3.png"
+            ]
         }
     ]
 }
