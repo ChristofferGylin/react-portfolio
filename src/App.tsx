@@ -1,5 +1,5 @@
 import { Suspense } from "react"
-import { Trans, useTranslation } from "react-i18next"
+import { useTranslation } from "react-i18next"
 
 const lngs = {
   en: { nativeName: 'English'},
@@ -8,7 +8,7 @@ const lngs = {
 
 function App() {
 
-  const { t, i18n } = useTranslation()
+  const { t, i18n } = useTranslation(['home'])
 
   return (
     <>
@@ -21,12 +21,13 @@ function App() {
         )
       })}
     </div>
-      <h1 className="text-3xl text-purple-500">Vite + React = Portfolio</h1>
-      <Trans i18nKey={'welcome.part1'}>
-        Welcome <span className="text-pink-600 text-xl animate-bounce">beautiful</span> people
-      </Trans>
+      <p>{t('intro.hi', { ns: 'home'})}</p>
+      <h1 className="text-3xl text-purple-500">Christoffer Gylin</h1>
       <p>
-        {t('welcome.part2')}
+        {t('intro.tagline', {ns: 'home'})}
+      </p>
+      <p>
+        {t('intro.text', {ns: 'home'})}
       </p>
     </>
   )

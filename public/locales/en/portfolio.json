@@ -1,0 +1,112 @@
+{
+    "heading": "Portfolio",
+    "tagline": "A small selection of things I've built",
+    "projects": [
+        {
+            "title": "Plinkplonk.io",
+            "description": "PlinkPlonk is my current passion project, a web app for music production that lets the user create music directly in the browser! Built with Next.js, TypeScript, tRPC, Prisma, Tailwind, and Tone.js.",
+            "tech": [
+                "Next.js", "TypeScript", "tRPC", "Tailwind CSS", "Prisma", "Tone.js"
+            ],
+            "links": [
+                {
+                    "title": "Live link",
+                    "href": "https://plinkplonk.io"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/t3-music-app"
+                }
+            ],
+            "images": [
+                "/projects/plinkplonk/plinkplonk1.png",
+                "/projects/plinkplonk/plinkplonk2.png",
+                "/projects/plinkplonk/plinkplonk3.png"
+            ]
+        },
+        {
+            "title": "Ekholmsnäsbacken Website",
+            "description": "A Squarespace implementation I built for the ski slope Ekholmsnäsbacken on Lidingö in Stockholm.",
+            "tech": [
+                "Squarespace", "HTML", "CSS"
+            ],
+            "links": [
+                {
+                    "title": "Live link",
+                    "href": "https://www.ekholmsnasbacken.se"
+                }
+            ],
+            "images": [
+                "/projects/ekholmsnas/ekholmsnas1.png",
+                "/projects/ekholmsnas/ekholmsnas2.png",
+                "/projects/ekholmsnas/ekholmsnas3.png"
+            ]
+        },
+        {
+            "title": "Tiny Grand Prix",
+            "description": "A top-down retro-style racing game I built with Phaser 3, a game engine for JavaScript, complete with split-screen multiplayer (and bugs). Time to challenge your friends!",
+            "tech": [
+                "HTML", "CSS", "JavaScript", "Tone.js", "Phaser 3"
+            ],
+            "links": [
+                {
+                    "title": "Live link",
+                    "href": "https://christoffergylin.com/tinygrandprix"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/tinygrandprix"
+                }
+            ],
+            "images": [
+                "/projects/tinygrandprix/tinygrandprix1.png",
+                "/projects/tinygrandprix/tinygrandprix2.png",
+                "/projects/tinygrandprix/tinygrandprix3.png"
+            ]
+        },
+        {
+            "title": "Mem++",
+            "description": "A classic memory game in a fresh new version.",
+            "tech": [
+                "HTML", "CSS", "JavaScript"
+            ],
+            "links": [
+                {
+                    "title": "Live link",
+                    "href": "https://christoffergylin.github.io/memplusplus/"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/memplusplus"
+                }
+            ],
+            "images": [
+                "/projects/memplusplus/memplusplus1.png",
+                "/projects/memplusplus/memplusplus2.png",
+                "/projects/memplusplus/memplusplus3.png"
+            ]
+        },
+        {
+            "title": "Web Groovebox",
+            "description": "A Proof of Concept for a web-based application for music production, a so-called DAW, Digital Audio Workstation, which I built using Tone.js, a library for working with sound in a musical way in JavaScript.",
+            "tech": [
+                "HTML", "CSS", "JavaScript", "Tone.js"
+            ],
+            "links": [
+                {
+                    "title": "Live link",
+                    "href": "https://christoffergylin.com/groovebox"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/webgroovebox"
+                }
+            ],
+            "images": [
+                "/projects/webgroovebox/webgroovebox1.png",
+                "/projects/webgroovebox/webgroovebox2.png",
+                "/projects/webgroovebox/webgroovebox3.png"
+            ]
+        }
+    ]
+}
