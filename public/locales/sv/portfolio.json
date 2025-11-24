@@ -1,0 +1,28 @@
+{
+    "heading": "Portfolio",
+    "tagline": "Ett litet urval av saker som jag byggt",
+    "projects": [
+        {
+            "title": "Plinkplonk.io",
+            "description": "PlinkPlonk är mitt nuvarande passion project, en till webbapp för musikproduktions som låter användaren skapa musik direkt i webbläsaren! Byggd med Next.js, TypeScript, tRPC, Prisma, Tailwind och Tone.js.",
+            "tech": [
+                "Next.js", "TypeScript", "tRPC", "Tailwind CSS", "Prisma", "Tone.js"
+            ],
+            "links": [
+                {
+                    "title": "Live länk",
+                    "href": "https://plinkplonk.io"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/t3-music-app"
+                }
+            ],
+            "images": [
+                "/projects/plinkplonk/plinkplonk1.png",
+                "/projects/plinkplonk/plinkplonk2.png",
+                "/projects/plinkplonk/plinkplonk3.png"
+            ]
+        }
+    ]
+}
