@@ -85,6 +85,28 @@
                 "/projects/memplusplus/memplusplus2.png",
                 "/projects/memplusplus/memplusplus3.png"
             ]
+        },
+        {
+            "title": "Web Groovebox",
+            "description": "Proof of Concept för en webbaserad applikation för musikproduktion, en så kallad DAW, Digital Audio Workstation som jag byggde med hjälp av Tone.js, ett bibliotek för att arbeta med ljud på ett musikaliskt sätt i JavaScript.",
+            "tech": [
+                "HTML", "CSS", "JavaScript", "Tone.js"
+            ],
+            "links": [
+                {
+                    "title": "Live länk",
+                    "href": "https://christoffergylin.com/groovebox"
+                },
+                {
+                    "title": "Github repo",
+                    "href": "https://github.com/ChristofferGylin/webgroovebox"
+                }
+            ],
+            "images": [
+                "/projects/webgroovebox/webgroovebox1.png",
+                "/projects/webgroovebox/webgroovebox2.png",
+                "/projects/webgroovebox/webgroovebox3.png"
+            ]
         }
     ]
 }
