@@ -1,9 +1,5 @@
-"use client"
-
-//import { useLanguageContext } from "@/contexts/Language"
 import LanguageSelector from "./LanguageSelector"
 import MenuItem from "./MenuItem"
-//import { menuTitles } from "./menuTitles"
 import { useState } from "react"
 import { IoMenu, IoClose, IoHome, IoInformationCircle, IoFolder, IoDocumentText } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
