@@ -3,8 +3,6 @@ import Indicator from "../UI/Indicator"
 
 const LanguageSelector = () => {
 
-    //const { cookieConsent, language, languageSetter } = useLanguageContext()
-
     //const languageIndicatorPosition = language === 'en' ? 'translate-x-[34px]' : ''
 
     // const onSetLanguage = (newLang: AvailibleLanguages) => {
@@ -17,7 +15,7 @@ const LanguageSelector = () => {
 
     return (
         <div className="flex flex-col justify-center items-center gap-0.5 h-full pt-1.5">
-            <div className="flex justify-between w-[54px] h-[20px]">
+            <div className="flex justify-between w-[54px] h-5">
                 <ImageButton src={"/flags/se.svg"} alt='Change language to Swedish' callback={() => {}} />
                 <p className="flex justify-center items-center">/</p>
                 <ImageButton src={"/flags/gb.svg"} alt='Change language to English' callback={() => {}} />
