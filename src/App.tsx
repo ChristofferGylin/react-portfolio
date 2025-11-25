@@ -1,11 +1,6 @@
 import { Suspense } from "react"
-import { useTranslation } from "react-i18next"
+// import { useTranslation } from "react-i18next"
 import Menu from "./components/menu/Menu"
-
-const lngs = {
-  en: { nativeName: 'English'},
-  sv: { nativeName: 'Svenska'},
-}
 
 function App() {
 
