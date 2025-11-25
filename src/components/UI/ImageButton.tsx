@@ -8,7 +8,7 @@ export type ImageButtonProps = {
 
 const ImageButton = ({ src, alt, size = 20, style = '', callback }: ImageButtonProps) => {
     return (
-        <button onClick={callback} className={`group/ButtonGroup flex justify-center items-center justify-self-center self-end h-fit w-fit ${style}`}>
+        <button onClick={callback} className={`group/ButtonGroup flex justify-center items-center justify-self-center self-end h-fit w-fit cursor-pointer ${style}`}>
            <img
             src={src}
             alt={alt}
