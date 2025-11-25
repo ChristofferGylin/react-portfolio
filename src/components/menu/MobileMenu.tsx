@@ -3,21 +3,15 @@ import MenuItem from "./MenuItem"
 import { useState } from "react"
 import { IoMenu, IoClose, IoHome, IoInformationCircle, IoFolder, IoDocumentText } from "react-icons/io5";
 import { MdAlternateEmail } from "react-icons/md";
-import IconButton from "../UI/IconButton"
+import IconButton from "../UI/IconButton";
+import { useTranslation } from "react-i18next";
 
 const MobileMenu = () => {
 
-    //const { language } = useLanguageContext()
+    const { t } = useTranslation(['menu'])
+
     const [visible, setVisible] = useState(false)
 
-    //const content = language === 'en' ? menuTitles.en : menuTitles.sv
-    const content = {
-        home: "Home",
-        about: "About",
-        portfolio: "Portfolio",
-        cv: "CV",
-        contact: "Contact"
-    }
     const toggleMenu = () => {
         setVisible((old) => !old)
     }
@@ -28,12 +22,12 @@ const MobileMenu = () => {
         <nav className="flex md:hidden gap-3">
             <LanguageSelector />
             <IconButton Icon={visible ? <IoClose className={iconStyle} /> : <IoMenu className={iconStyle} />} callback={toggleMenu}/>
-            <ul className={`z-50 fixed top-0 right-0 flex flex-col justify-start foreground rounded-bl-lg mt-[3rem] transition-all duration-300 ease-in-out ${!visible ? 'w-0' : 'w-48 border-b border-l'}`}>
-                <MenuItem href="/" title={content.home} Icon={<IoHome />} />
-                <MenuItem href="/about" title={content.about} Icon={<IoInformationCircle />} />
-                <MenuItem href="/portfolio" title={content.portfolio} Icon={<IoFolder />} />
-                <MenuItem href="/cv" title={content.cv} Icon={<IoDocumentText />} />
-                <MenuItem href="/contact" title={content.contact} Icon={<MdAlternateEmail />} />
+            <ul className={`z-50 fixed top-0 right-0 flex flex-col justify-start foreground rounded-bl-lg mt-12 transition-all duration-300 ease-in-out ${!visible ? 'w-0' : 'w-48 border-b border-l'}`}>
+                <MenuItem href="/" title={t('home', { ns: 'menu'})} Icon={<IoHome />} />
+                <MenuItem href="/about" title={t('about', { ns: 'menu'})} Icon={<IoInformationCircle />} />
+                <MenuItem href="/portfolio" title={t('portfolio', { ns: 'menu'})} Icon={<IoFolder />} />
+                <MenuItem href="/cv" title={t('cv', { ns: 'menu'})} Icon={<IoDocumentText />} />
+                <MenuItem href="/contact" title={t('contact', { ns: 'menu'})} Icon={<MdAlternateEmail />} />
             </ul>
         </nav>
     )
