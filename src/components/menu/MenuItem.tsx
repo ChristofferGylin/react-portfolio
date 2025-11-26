@@ -1,5 +1,5 @@
 import { type ReactElement } from "react";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 type MenuItemProps = {
     href: string;
@@ -8,8 +8,8 @@ type MenuItemProps = {
 }
 
 const MenuItem = ({ href, title, Icon }: MenuItemProps) => {
-    // TODO: get pathname from React Router
-    const pathname = "Get from React Router useLocation hook when installed"
+    
+    const { pathname } = useLocation() 
     const highlighted = pathname === href
 
     return (
