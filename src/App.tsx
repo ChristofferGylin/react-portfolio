@@ -1,5 +1,4 @@
 import { Suspense } from "react"
-// import { useTranslation } from "react-i18next"
 import Menu from "./components/menu/Menu"
 import { Route, Routes } from "react-router-dom"
 import Home from "./components/home/Home"
@@ -10,9 +9,6 @@ import Portfolio from "./components/portfolio/Portfolio"
 import NotFound from "./components/notFound/Not Found"
 
 function App() {
-
-  // const { t, i18n } = useTranslation(['home'])
-
   return (
     <>
       <Menu />
