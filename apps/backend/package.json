@@ -1,0 +1,14 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Backend for Christoffer Gylin portfolio site",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Christoffer Gylin",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
