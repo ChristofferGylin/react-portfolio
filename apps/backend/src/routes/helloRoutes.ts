@@ -1,9 +1,9 @@
 import { Router } from "express";
-import { hello } from "../handlers/hello.js";
+import { hello } from "../handlers/hello.ts";
 
 
 const router = Router()
 
-router.post("/hello", hello)
+router.post("/", hello)
 
 export default router
