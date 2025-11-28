@@ -1,9 +1,8 @@
 import { Router } from "express";
-import { hello } from "../handlers/hello.ts";
-
+import { githubFetch } from "../handlers/github.ts";
 
 const router = Router()
 
-router.post("/", hello)
+router.get("/", githubFetch)
 
 export default router
