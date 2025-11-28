@@ -2,9 +2,10 @@
 import { Octokit } from "octokit";
 import batchFetch from "../utils/batchFetch.ts";
 import type { NextFunction, Request, Response } from "express";
+import config from "../config/config.ts";
 
 const octokit = new Octokit({
-    auth: process.env.GITHUB_TOKEN
+    auth: config.githubToken
 })
 
 export const githubFetch = async (req: Request, res: Response, next: NextFunction) => {
