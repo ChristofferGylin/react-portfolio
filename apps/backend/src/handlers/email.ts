@@ -17,9 +17,9 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
         const { email, name, message } = req.body
 
         const transporter = nodemailer.createTransport({
-            host: config.smtpUrl,
-            port: 465,
-            secure: true,
+            host: config.emailHost,
+            port: config.emailPort,
+            secure: config.emailPort === 465,
             auth: {
                 user: config.emailUser,
                 pass: config.emailPassword,
@@ -28,7 +28,7 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
 
         const emailInfo = await transporter.sendEmail({
             from: email,
-            to: "myemail@mydomain.com",
+            to: config.emailRecipient,
             subject: `Contact form message from ${name}`,
             text: message,
             html: `<p>${message}</p>`,
