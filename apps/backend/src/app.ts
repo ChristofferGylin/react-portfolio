@@ -1,6 +1,6 @@
 import express from "express"
 import githubRoutes from "./routes/githubRoutes.ts"
-import emailRoutes from "./routes/githubRoutes.ts"
+import emailRoutes from "./routes/emailRoutes.ts"
 import { errorHandler } from "./middleware/errorHandler.ts"
 
 const app = express()

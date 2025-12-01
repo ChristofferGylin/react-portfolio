@@ -1,6 +1,6 @@
 import type { NextFunction, Request, Response } from "express"
 import config from "../config/config.ts"
-const nodemailer = require("nodemailer")
+import nodemailer from "nodemailer"
 
 export const sendEmail = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -23,10 +23,13 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
             auth: {
                 user: config.emailUser,
                 pass: config.emailPassword,
+            },
+            tls: {
+                rejectUnauthorized: false,
             }
         })
 
-        const emailInfo = await transporter.sendEmail({
+        const emailInfo = await transporter.sendMail({
             from: email,
             to: config.emailRecipient,
             subject: `Contact form message from ${name}`,
@@ -35,7 +38,7 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
 
         })
 
-        console.log("Message sent:", emailInfo.id)
+        console.log("Message sent:", emailInfo.messageId)
 
         res.status(200).send()
 
