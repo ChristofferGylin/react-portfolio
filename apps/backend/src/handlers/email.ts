@@ -23,18 +23,16 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
             auth: {
                 user: config.emailUser,
                 pass: config.emailPassword,
-            },
-            tls: {
-                rejectUnauthorized: false,
             }
         })
 
         const emailInfo = await transporter.sendMail({
-            from: email,
-            to: config.emailRecipient,
+            from: config.emailRecipient,
+            to: "tastemaker@tastemaker.se",
+            replyTo: email,
             subject: `Contact form message from ${name}`,
             text: message,
-            html: `<p>${message}</p>`,
+            html: `<p>message from ${name} (${email})<p>${message}</p>`,
 
         })
 
