@@ -17,8 +17,7 @@ const GithubWidget = () => {
         const fetchData = async () => {
 
             const animationDuration = 2000
-
-            const res = await fetch('/api/github')
+            const res = await fetch(`${import.meta.env.VITE_API_BASE_URL}/api/github`)
 
             if (!res.ok) {
                 const data = await res.json()
