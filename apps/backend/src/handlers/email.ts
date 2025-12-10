@@ -27,8 +27,8 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
         })
 
         const emailInfo = await transporter.sendMail({
-            from: config.emailRecipient,
-            to: "tastemaker@tastemaker.se",
+            from: config.emailUser,
+            to: config.emailRecipient,
             replyTo: email,
             subject: `Contact form message from ${name}`,
             text: message,
@@ -38,7 +38,7 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
 
         console.log("Message sent:", emailInfo.messageId)
 
-        res.status(200).send()
+        res.status(200).json(emailInfo)
 
     } catch (error) {
         console.error(error)

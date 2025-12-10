@@ -13,6 +13,7 @@
   "author": "Christoffer Gylin",
   "license": "ISC",
   "dependencies": {
+    "@types/mailgun-js": "^0.22.19",
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mailgun.js": "^12.3.1",
