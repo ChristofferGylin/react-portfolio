@@ -30,7 +30,7 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
             from: config.emailUser,
             to: config.emailRecipient,
             replyTo: email,
-            subject: `Contact form message from ${name}`,
+            subject: `Contact form message from ${name} (${email})`,
             text: message,
             html: `<p>message from ${name} (${email})<p>${message}</p>`,
 
