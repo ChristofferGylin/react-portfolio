@@ -38,7 +38,7 @@ export const sendEmail = async (req: Request, res: Response, next: NextFunction)
 
         console.log("Message sent:", emailInfo.messageId)
 
-        res.status(200).json(emailInfo)
+        res.status(200).send()
 
     } catch (error) {
         console.error(error)
