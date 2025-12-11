@@ -73,7 +73,7 @@ const Intro = () => {
             <p>{t("intro.hi", { ns: "home"})}</p>
             <h1>Christoffer Gylin</h1>
             <p className="text-4xl font-bold">{t("intro.tagline1", { ns: "home"})}</p>
-            <p className="text-4xl font-bold">{t("intro.tagline2", { ns: "home"})} {typed}</p>
+            <p className="text-4xl font-bold">{t("intro.tagline2", { ns: "home"})} {typed}<span className="inline-block h-[80%]  w-0.5 bg-white ml-1 animate-blink" /></p>
         </div>
     )
 }

@@ -23,3 +23,12 @@ h1 {
 .menu-grid-rows {
   @apply h-full grid grid-rows-[1fr_25px_1fr] gap-0.5;
 }
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
+}
+
+.animate-blink {
+  animation: blink 1s step-start infinite;
+}
