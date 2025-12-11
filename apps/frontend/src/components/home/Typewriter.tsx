@@ -6,7 +6,7 @@ type TypewriterProps = {
     words: string[];
 }
 
-const Typewriter = ({typingDelay = 200, waitingDelay = 1200, words}: TypewriterProps) => {
+const Typewriter = ({ typingDelay = 200, waitingDelay = 1200, words }: TypewriterProps) => {
 
     const [typed, setTyped] = useState("")
     const wordIndex = useRef(0)
@@ -34,7 +34,7 @@ const Typewriter = ({typingDelay = 200, waitingDelay = 1200, words}: TypewriterP
                 setTyped(words[wordIndex.current].slice(0, letterIndex.current))
 
                 if (letterIndex.current >= words[wordIndex.current].length) {
-                    
+
                     if (wordIndex.current + 1 >= words.length) {
                         wordIndex.current = 0
                     } else {
@@ -56,10 +56,10 @@ const Typewriter = ({typingDelay = 200, waitingDelay = 1200, words}: TypewriterP
 
         timer.current = setTimeout(typeText, typingDelay)
         return () => clearTimeout(timer.current)
-        
+
     }, [])
 
-    return <>{typed}<span className="inline-block h-[80%]  w-0.5 bg-white ml-1 animate-blink" /></>
+    return <>{typed}<span className="inline-block h-9 w-0.5 bg-white ml-1 animate-blink" ></span></>
 }
 
 export default Typewriter
