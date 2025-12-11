@@ -15,11 +15,10 @@ const Intro = () => {
     const { t } = useTranslation(['home'])
 
     return (
-        <div className="aspect-square flex flex-col gap-6 overflow-hidden">
-            <p>{t("intro.hi", { ns: "home"})}</p>
-            <h1>Christoffer Gylin</h1>
-            <p className="text-4xl font-bold">{t("intro.tagline1", { ns: "home"})}</p>
-            <p className="text-4xl font-bold">{t("intro.tagline2", { ns: "home"})} <Typewriter words={techs} /></p>
+        <div className="h-fit flex flex-col gap-6 overflow-hidden">
+            <p className="text-3xl">{t("intro.hi", { ns: "home"})}</p>
+            <h1 className="text-7xl">Christoffer Gylin</h1>
+            <p className="text-5xl font-bold">{t("intro.tagline", { ns: "home"})} <Typewriter words={techs} /></p>
         </div>
     )
 }

@@ -1,8 +1,7 @@
 {
     "intro": {
         "hi": "Hi, my name is",
-        "tagline1": "I like building apps, games and web pages",
-        "tagline2": "with"
+        "tagline": "I like building apps, games and web pages with"
     },
     "about": {
         "paragraphs": [
