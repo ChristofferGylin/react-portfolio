@@ -1,5 +1,9 @@
 @import 'tailwindcss';
 
+body {
+  @apply bg-slate-950/90 text-sky-200;
+}
+
 h1 {
   @apply text-5xl text-cyan-300 font-bold;
 }
