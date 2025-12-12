@@ -65,9 +65,9 @@ const GithubWidget = () => {
     }, [])
 
     return (
-        <div className="w-full h-fit border border-cyan-300 foreground rounded-xl flex flex-col p-5 shadow shadow-cyan-200/30">
-            <h1 className="text-3xl text-cyan-300 border-b border-cyan-200/50 p-3">{t("github.heading", {ns: "home"})}</h1>
-            <ul className="w-full flex flex-col gap-3 p-4 text-2xl text-cyan-400">
+        <div className="justify-self-center w-full lg:w-4/5 xl:w-3/4 h-fit border border-cyan-300 foreground rounded-xl flex flex-col p-5 shadow shadow-cyan-200/30">
+            <h1 className="text-2xl md:text-3xl text-cyan-300 border-b border-cyan-200/50 p-3">{t("github.heading", {ns: "home"})}</h1>
+            <ul className="w-full flex flex-col gap-3 p-4 text-lg md:text-2xl text-cyan-400">
                 {Object.entries(languages).map(([key, lang]) => {
                 return (
                     <li className="flex flex-col gap-1 w-full" key={key}>
