@@ -4,7 +4,7 @@ import Intro from "./Intro"
 const Hero = () => {
 
     return (
-        <section className="w-full grid grid-cols-2 gap-32 p-24">
+        <section className="w-full grid grid-rows-2 lg:grid-cols-2 lg:gap-32 p-24">
             <Intro />
             <GithubWidget />
         </section>
