@@ -2,7 +2,10 @@
     "heading": "Send me a message!",
     "tagline": "Is there anything I can do for you?",
     "text_placeholder": "Message",
+    "text_error_msg": "A message is required",
     "name_placeholder": "Name",
+    "name_error_msg": "A name is required",
     "email_placeholder": "E-mail",
+    "email_error_msg": "An email address is required",
     "button": "Send message"
 }

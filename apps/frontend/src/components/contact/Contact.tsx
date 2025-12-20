@@ -3,7 +3,17 @@ import { useForm } from "react-hook-form"
 
 const Contact = () => {
     
-    const { register, handleSubmit } = useForm() 
+    const { 
+        register,
+        handleSubmit,
+        formState: { errors }
+     } = useForm({
+        defaultValues: {
+            message: "",
+            name: "",
+            email: "",
+        }
+     }) 
 
     const { t } = useTranslation("contact")
     
@@ -14,9 +24,12 @@ const Contact = () => {
             <form onSubmit={handleSubmit((data) => {
                 console.log(data)
             })}>
-                <input {...register("message")} placeholder={t("text_placeholder", { ns: "contact"})} />
-                <input {...register("name")} placeholder={t("name_placeholder", { ns: "contact"})} />
-                <input {...register("email")} placeholder={t("email_placeholder", { ns: "contact"})} />
+                <input {...register("message", { required: t("text_error_msg", { ns: "contact" })})} placeholder={t("text_placeholder", { ns: "contact"})} />
+                <p>{errors.message?.message}</p>
+                <input {...register("name", { required: t("name_error_msg", { ns: "contact" })})} placeholder={t("name_placeholder", { ns: "contact"})} />
+                <p>{errors.name?.message}</p>
+                <input {...register("email", { required: t("email_error_msg", { ns: "contact" })})} placeholder={t("email_placeholder", { ns: "contact"})} />
+                <p>{errors.email?.message}</p>
                 <input className="cursor-pointer" type="submit" value={t("button", { ns: "contact"})} />
             </form>
         </div>
