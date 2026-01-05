@@ -52,7 +52,7 @@ return (
                     <p className="input-warning">{errors.email?.message}</p>
                 </div>
                 <input
-                    className="cursor-pointer h-12 mt-4"
+                    className="cursor-pointer mt-4 w-fit p-4 text-xl rounded-lg border border-cyan-500/50 bg-slate-800 text-cyan-300 hover:border-cyan-500 hover:bg-slate-700"
                     type="submit"
                     value={t("button", { ns: "contact" })}
                 />
