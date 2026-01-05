@@ -1,7 +1,7 @@
 @import 'tailwindcss';
 
 .text-input {
-  @apply border border-slate-400 bg-slate-200 text-slate-900 p-2 rounded-lg;
+  @apply border-4 bg-slate-200 text-slate-900 p-2 rounded-lg;
 }
 
 .input-warning {

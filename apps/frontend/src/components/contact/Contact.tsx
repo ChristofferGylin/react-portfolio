@@ -16,6 +16,8 @@ const Contact = () => {
      }) 
 
     const { t } = useTranslation("contact")
+
+    console.log('errors:', errors)
     
 return (
     <div className="w-full flex justify-center min-h-[calc(100vh-8rem)]">
@@ -30,7 +32,7 @@ return (
             >
                 <div className="flex flex-col flex-1 min-h-0">
                     <textarea
-                        className="text-input flex-1 min-h-0"
+                        className={`text-input flex-1 min-h-0 ${errors.message ? "border-red-500" : "border-transparent"}`}
                         {...register("message", { required: t("text_error_msg", { ns: "contact" }) })}
                         placeholder={t("text_placeholder", { ns: "contact" })}
                     />
@@ -38,21 +40,22 @@ return (
                 </div>
                 <div className="grid grid-rows-[3rem_2.2rem_3rem_2.2rem]">
                     <input
-                        className="text-input"
+                        className={`text-input ${errors.name ? "border-red-500" : "border-transparent"}`}
                         {...register("name", { required: t("name_error_msg", { ns: "contact" }) })}
                         placeholder={t("name_placeholder", { ns: "contact" })}
                     />
                     <p className="input-warning">{errors.name?.message}</p>
 
                     <input
-                        className="text-input"
+                        className={`text-input ${errors.email ? "border-red-500" : "border-transparent"}`}
                         {...register("email", { required: t("email_error_msg", { ns: "contact" }) })}
                         placeholder={t("email_placeholder", { ns: "contact" })}
                     />
                     <p className="input-warning">{errors.email?.message}</p>
                 </div>
                 <input
-                    className="cursor-pointer w-fit p-4 text-xl rounded-lg border border-cyan-500/50 bg-slate-800 text-cyan-300 hover:border-cyan-500 hover:bg-slate-700"
+                    disabled={Object.keys(errors).length > 0}
+                    className="enabled:cursor-pointer w-fit p-4 text-xl rounded-lg border border-cyan-500/50 bg-slate-800 text-cyan-300 enabled:hover:border-cyan-500 enabled:hover:bg-slate-700"
                     type="submit"
                     value={t("button", { ns: "contact" })}
                 />
