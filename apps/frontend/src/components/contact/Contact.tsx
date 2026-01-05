@@ -28,7 +28,7 @@ return (
                 className="flex flex-col flex-1 min-h-0 w-full"
                 onSubmit={handleSubmit((data) => console.log(data))}
             >
-                <div className="flex flex-col flex-1 min-h-0 mb-4">
+                <div className="flex flex-col flex-1 min-h-0">
                     <textarea
                         className="text-input flex-1 min-h-0"
                         {...register("message", { required: t("text_error_msg", { ns: "contact" }) })}
@@ -36,7 +36,7 @@ return (
                     />
                     <p className="input-warning">{errors.message?.message}</p>
                 </div>
-                <div className="grid gap-1">
+                <div className="grid grid-rows-[3rem_2.2rem_3rem_2.2rem]">
                     <input
                         className="text-input"
                         {...register("name", { required: t("name_error_msg", { ns: "contact" }) })}
@@ -52,7 +52,7 @@ return (
                     <p className="input-warning">{errors.email?.message}</p>
                 </div>
                 <input
-                    className="cursor-pointer mt-4 w-fit p-4 text-xl rounded-lg border border-cyan-500/50 bg-slate-800 text-cyan-300 hover:border-cyan-500 hover:bg-slate-700"
+                    className="cursor-pointer w-fit p-4 text-xl rounded-lg border border-cyan-500/50 bg-slate-800 text-cyan-300 hover:border-cyan-500 hover:bg-slate-700"
                     type="submit"
                     value={t("button", { ns: "contact" })}
                 />
