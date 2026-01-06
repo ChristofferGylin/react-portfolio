@@ -1,5 +1,12 @@
 @import 'tailwindcss';
 
+.text-input {
+  @apply border-4 bg-slate-200 text-slate-900 p-2 rounded-lg;
+}
+
+.input-warning {
+  @apply h-10 pt-1;
+}
 body {
   @apply bg-slate-950/90 text-sky-200;
 }

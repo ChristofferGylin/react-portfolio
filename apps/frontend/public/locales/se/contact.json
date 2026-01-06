@@ -2,6 +2,10 @@
     "heading": "Skicka mig ett meddelande!",
     "tagline": "Finns det något jag kan göra för dig?",
     "text_placeholder": "Meddelande",
+    "text_error_msg": "Du måste skriva ett meddelande för att kunna skicka",
     "name_placeholder": "Namn",
-    "email_placeholder": "E-postadress"
+    "name_error_msg": "Namn är obligatoriskt",
+    "email_placeholder": "E-postadress",
+    "email_error_msg": "En epostadress är obligatoriskt",
+    "button": "Skicka meddelande"
 }
