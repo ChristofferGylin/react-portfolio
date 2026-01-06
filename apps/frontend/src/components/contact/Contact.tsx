@@ -1,10 +1,12 @@
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
 import { sendMessage } from "../../utils/apiClient"
+import type { EmailParams } from "../../types/api"
 
 const Contact = () => {
     
     const { 
+        reset,
         register,
         handleSubmit,
         formState: { errors }
@@ -17,6 +19,16 @@ const Contact = () => {
      }) 
 
     const { t } = useTranslation("contact")
+
+    const onSubmit = async (data: EmailParams) => {
+        const response = await sendMessage(data)
+        if (!response.ok) {
+            console.error(response.error)
+        } else {
+            reset()
+        }
+        
+    }
     
 return (
     <div className="w-full flex justify-center min-h-[calc(100vh-8rem)]">
@@ -27,7 +39,7 @@ return (
             </div>
             <form
                 className="flex flex-col flex-1 min-h-0 w-full"
-                onSubmit={handleSubmit((data) => sendMessage(data))}
+                onSubmit={handleSubmit((data) => onSubmit(data))}
             >
                 <div className="flex flex-col flex-1 min-h-0">
                     <textarea

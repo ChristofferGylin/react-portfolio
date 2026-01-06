@@ -1,4 +1,4 @@
-import { type EmailParams } from "../types/api"
+import { type EmailParams, type EmailResponse } from "../types/api"
 
 export const resolveApiPrefix = () => {
     if (import.meta.env.PROD) {
@@ -8,7 +8,7 @@ export const resolveApiPrefix = () => {
     }
 }
 
-export const sendMessage = async (params: EmailParams) => {
+export const sendMessage = async (params: EmailParams): Promise<EmailResponse> => {
     try {
         const response = await fetch(`${resolveApiPrefix()}/api/email`, {
             method: "POST",
@@ -23,9 +23,12 @@ export const sendMessage = async (params: EmailParams) => {
         }
 
         return response
-    } catch (error) {
+    } catch (err) {
+
+        const error = err instanceof Error ? err : new Error(String(err))
         console.error(error)
-        return { error }
+        
+        return { ok: false, error }
     }
     
 }

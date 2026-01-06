@@ -3,3 +3,8 @@ export type EmailParams = {
     email: string;
     message: string;
 }
+
+export type EmailResponse = {
+    ok: boolean;
+    error?: Error;
+}
