@@ -22,10 +22,10 @@ export const sendMessage = async (params: EmailParams) => {
             throw new Error(`Status: ${response.status}`)
         }
 
-        const data = await response.json()
-        return data
+        return response
     } catch (error) {
         console.error(error)
+        return { error }
     }
     
 }

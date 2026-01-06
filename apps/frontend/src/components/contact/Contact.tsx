@@ -1,5 +1,6 @@
 import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
+import { sendMessage } from "../../utils/apiClient"
 
 const Contact = () => {
     
@@ -16,8 +17,6 @@ const Contact = () => {
      }) 
 
     const { t } = useTranslation("contact")
-
-    console.log('errors:', errors)
     
 return (
     <div className="w-full flex justify-center min-h-[calc(100vh-8rem)]">
@@ -28,7 +27,7 @@ return (
             </div>
             <form
                 className="flex flex-col flex-1 min-h-0 w-full"
-                onSubmit={handleSubmit((data) => console.log(data))}
+                onSubmit={handleSubmit((data) => sendMessage(data))}
             >
                 <div className="flex flex-col flex-1 min-h-0">
                     <textarea
