@@ -2,6 +2,7 @@ import { useTranslation } from "react-i18next"
 import { useForm } from "react-hook-form"
 import { sendMessage } from "../../utils/apiClient"
 import type { EmailParams } from "../../types/api"
+import PageContainer from "../common/PageContainer"
 
 const Contact = () => {
     
@@ -32,7 +33,7 @@ const Contact = () => {
     
 return (
     <div className="w-full flex justify-center min-h-[calc(100vh-8rem)]">
-        <div className="flex flex-col w-full lg:w-3/4 min-h-0 p-10 lg:px-0">
+        <PageContainer>
             <div className="flex flex-col gap-2 mb-8">
                 <p className="text-2xl">{t("tagline", { ns: "contact" })}</p>
                 <h1 className="text-5xl">{t("heading", { ns: "contact" })}</h1>
@@ -71,7 +72,7 @@ return (
                     value={t("button", { ns: "contact" })}
                 />
             </form>
-        </div>
+        </PageContainer>
   </div>
 );
 
