@@ -9,7 +9,7 @@ const About = () => {
     return (
         <PageContainer>
             <h1 className="text-5xl mb-8">{t("heading1", { ns: "about" })}</h1>
-            <div className="flex flex-col gap-6 text-xl">
+            <div className="flex flex-col gap-6 text-2xl">
                 {paragraphs.map((para, index) => (
                     <p key={`aboutParagraph${index}`}>{para}</p>
                 ))}
