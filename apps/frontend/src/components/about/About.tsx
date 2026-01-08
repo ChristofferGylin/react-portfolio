@@ -1,8 +1,10 @@
+import PageContainer from "../common/PageContainer"
+
 const About = () => {
     return (
-        <div>
+        <PageContainer>
             <h1>About</h1>
-        </div>
+        </PageContainer>
     )
 }
 
