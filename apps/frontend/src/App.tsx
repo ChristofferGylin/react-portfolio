@@ -7,6 +7,7 @@ import Contact from "./components/contact/Contact";
 import CV from "./components/cv/CV";
 import Portfolio from "./components/portfolio/Portfolio";
 import NotFound from "./components/notFound/Not Found";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <Footer />
     </>
   );
 }
