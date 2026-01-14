@@ -31,6 +31,10 @@ h1 {
   @apply h-full grid grid-rows-[1fr_25px_1fr] gap-0.5;
 }
 
+.header-footer {
+  @apply fixed left-0 z-50 w-full h-14 flex justify-between items-center p-2 border-b;
+}
+
 @keyframes blink {
   0%,
   50% {
