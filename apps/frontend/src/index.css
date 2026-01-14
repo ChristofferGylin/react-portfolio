@@ -32,7 +32,7 @@ h1 {
 }
 
 .header-footer {
-  @apply fixed left-0 z-50 w-full h-14 flex justify-between items-center p-2 border-b;
+  @apply fixed left-0 z-50 w-full h-14 flex justify-between items-center p-2 first:border-b last:border-t;
 }
 
 @keyframes blink {
