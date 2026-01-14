@@ -20,7 +20,7 @@ const MobileMenu = ({ visible }: { visible: boolean }) => {
         md:hidden
         rounded-bl-lg
         transition-transform duration-300 ease-in-out
-        ${visible ? "translate-x-0 opacity-100" : "translate-x-full opacity-0"}
+        ${visible ? "translate-x-0" : "translate-x-full"}
         foreground
         `}
     >
