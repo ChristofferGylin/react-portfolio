@@ -1,3 +1,4 @@
+import Github from "./GitHub";
 import LinkedIn from "./LinkedIn";
 
 const Footer = () => {
@@ -5,6 +6,7 @@ const Footer = () => {
     <footer className="header-footer bottom-0 foreground">
       <nav className="flex flex-row">
         <LinkedIn />
+        <Github />
       </nav>
       <span>Copyright 2026</span>
     </footer>
