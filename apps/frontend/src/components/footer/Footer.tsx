@@ -1,18 +1,12 @@
-import { linkedInPath } from "../../assets/icons/svgPaths";
-import { sky200, sky50 } from "../../assets/tailwindHexColors";
-import SvgLink from "../UI/SvgLink";
+import LinkedIn from "./LinkedIn";
 
 const Footer = () => {
   return (
     <footer className="header-footer bottom-0 foreground">
-      <nav>
-        <SvgLink
-          path={linkedInPath}
-          color={sky200}
-          hoverColor={sky50}
-          href="https://linkedin.com"
-        />
+      <nav className="flex flex-row">
+        <LinkedIn />
       </nav>
+      <span>Copyright 2026</span>
     </footer>
   );
 };
