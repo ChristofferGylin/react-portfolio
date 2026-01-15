@@ -4,7 +4,7 @@ import LinkedIn from "./LinkedIn";
 const Footer = () => {
   return (
     <footer className="header-footer bottom-0 foreground">
-      <nav className="flex flex-row">
+      <nav className="flex flex-row items-center gap-2">
         <LinkedIn />
         <Github />
       </nav>
